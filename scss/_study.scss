@@ -1,0 +1,48 @@
+.study {
+    margin-bottom:120px ;
+  .study__wrapper {
+    .study__title {
+      text-align: center;
+      color: rgb(35, 107, 107);
+      font-size: 38px;
+      margin-bottom: 100px;
+    }
+    .year__wrapper {
+      .year {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 30px;
+
+        h3 {
+          font-size: 30px;
+          color: rgb(43, 142, 142);
+        }
+        p {
+          margin-top: 5px;
+          color: rgb(75, 123, 123);
+          font-size: 20px;
+        }
+      }
+      .down {
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .study {
+    .study__wrapper {
+     
+      .year__wrapper {
+        .year {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

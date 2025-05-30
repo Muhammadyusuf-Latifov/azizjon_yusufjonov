@@ -1,0 +1,107 @@
+.hero {
+  background: url(../assets/hero-bg.png) no-repeat center;
+  min-height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000000, transparent);
+  }
+  
+  .hero__wrapper {
+    position: relative;
+    .hero__context {
+      padding-top: 250px;
+      text-align: center;
+      position: absolute;
+      z-index: 90;
+      .hero__title {
+        color: #fff;
+        font-size: 62px;
+        text-shadow: 2px 2px 50px #fff;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        span {
+          color: #21d5e6;
+          text-shadow: 2px 2px 50px;
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+        }
+      }
+      p {
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 24px;
+        color: #ddd;
+        max-width: 70%;
+        margin-bottom: 40px;
+      }
+      a {
+        button {
+          font-size: 20px;
+          padding: 20px 40px;
+          border-radius: 30px;
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+
+          border: 2px solid #55d9e6;
+          background: #21d5e6;
+          color: #fff;
+          font-weight: 600;
+          letter-spacing: 1px;
+          transition: 0.3s;
+        }
+        button:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 755px) {
+  .hero {
+    .hero__wrapper {
+      .hero__context {
+        .hero__title {
+          font-size: 50px;
+        }
+        p {
+          font-size: 20px;
+        }
+        a {
+          button {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 570px) {
+  .hero {
+    .hero__wrapper {
+      .hero__context {
+        .hero__title {
+          font-size: 35px;
+          line-height: 1.2;
+        }
+        p {
+          font-size: 16px;
+          letter-spacing: 0.8px;
+          line-height: 1.3;
+        }
+        a {
+          button {
+            font-size: 17px;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
