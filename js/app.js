@@ -7,3 +7,13 @@ window.addEventListener("scroll", () => {
     headerEl.classList.remove("shrink");
   }
 });
+// lightbox --------
+{
+  lightbox.option({
+    resizeDuration: 500,
+    wrapAround: true,
+  });
+}
+// ================================================
+// popup img ----------------------------------
+// ---------------------------------------
