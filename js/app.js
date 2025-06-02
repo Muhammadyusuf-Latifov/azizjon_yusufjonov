@@ -101,3 +101,36 @@ videoOverlay.addEventListener("click", (e) => {
     videoElement.currentTime = 0;
   }
 });
+// toggle menu=============================================================
+
+// function openMenu() {
+//   document.querySelector('#overlay').style.display = 'flex';
+// }
+
+// function closeMenuIfOutside(event) {
+//   const menu = document.querySelector('#mobileMenu');
+//   if (!menu.contains(event.target)) {
+//     document.getElementById('overlay').style.display = 'none';
+//   }
+// }
+// -=============================================================================================================
+// toggle menu==================================
+// ======================================
+const backmenuEl = document.querySelector(".overlay");
+const contentEl = document.querySelector(".content");
+function openMenu() {
+  backmenuEl.style.display = "flex";
+  function popupLeft() {
+    contentEl.classList.add("active");
+  }
+  popupLeft();
+}
+
+
+function closeMenu() {
+  backmenuEl.style.display = "none"
+  function closeLeft() {
+    contentEl.classList.remove("active")
+  }
+  closeLeft()
+}

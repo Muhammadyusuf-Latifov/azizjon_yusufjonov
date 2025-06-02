@@ -45,7 +45,7 @@
                 <a href="#"><span>Home</span></a>
               </li>
             </ul>
-            <div class="menu">
+            <div onclick="openMenu()" class="menu">
               <img src="./assets/menu.svg" alt="" />
             </div>
           </div>
@@ -146,10 +146,21 @@
                 <img src="./assets/circle.png" alt="" />
               </div>
               <div class="self__info bg">
-                <h3>Azizxon Yusufjonov</h3>
+                <a
+                  href="https://www.instaram.com/endourolog_azizjon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <i class="fa-brands fa-instagram" style="color: #15d2f5;"></i>
+                  <h3>Azizxon Yusufjonov</h3>
+                  </a
+                >
               </div>
               <div class="tag bg">
-                <h3>Urolog, endourolog, laparoskopist</h3>
+                <a href="https://t.me/Urologist_dr_Aziz" target="_blank">
+                  <i class="fa-brands fa-telegram" style="color: #2dcce3;"></i>
+                  <h3>Xabar yuborish </h3>
+                </a>
               </div>
               <div class="tel-number bg">
                 <a href="tel:+998998426170">
@@ -161,10 +172,10 @@
           </div>
         </div>
       </section>
-      <section class="study">
+      <section id="study" class="study">
         <div class="container">
           <div class="study__wrapper">
-            <h2 id="study" class="study__title">O'qish va Tajriba</h2>
+            <h2 class="study__title">O'qish va Tajriba</h2>
 
             <div class="year__wrapper">
               <!-- yaer 1 -->
@@ -305,9 +316,9 @@
           <button id="nextBtn" aria-label="Next image">&#8594;</button>
         </div>
       </section>
-      <section class="certificate">
+      <section id="cer" class="certificate">
         <div class="container">
-          <h2 id="cer" class="certificate__title">Sertifikatlar</h2>
+          <h2 class="certificate__title">Sertifikatlar</h2>
           <div class="certificate__wrapper">
             <!-- c1 -->
             <div class="gallery cer__line">
@@ -370,6 +381,60 @@
       </section>
     </main>
 
+    <div class="overlay" onclick="closeMenu()"></div>
+    <div class="content">
+      <ul>
+        <a class="menu__link" href="#">
+          <li class="li__menu">
+            <div>
+              <i class="fa-solid fa-house fa-xl" style="color: #74c0fc"></i>
+            </div>
+            <div><p>home</p></div>
+          </li>
+        </a>
+        <!-- -------------------- -->
+        <a class="menu__link" href="#study">
+          <li class="li__menu">
+            <div>
+              <i
+                class="fa-solid fa-graduation-cap fa-xl"
+                style="color: #74c0fc"
+              ></i>
+            </div>
+            <div><p>Tajriba</p></div>
+          </li>
+        </a>
+        <!-- ------------------- -->
+        <a class="menu__link" href="#">
+          <li class="li__menu">
+            <div>
+              <i
+                class="fa-solid fa-stethoscope fa-xl"
+                style="color: #74c0fc"
+              ></i>
+            </div>
+            <div><p>Operatsiyalar</p></div>
+          </li>
+        </a>
+        <!-- ------------------- -->
+        <a class="menu__link" href="#cer">
+          <li class="li__menu">
+            <div>
+              <i
+                class="fa-solid fa-certificate fa-xl"
+                style="color: #74c0fc"
+              ></i>
+            </div>
+            <div><p>Sertifikatlar</p></div>
+          </li>
+        </a>
+      </ul>
+    </div>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
+
+<i class="fa-solid fa-house fa-xl" style="color: #74c0fc"></i>
+
+<i class="fa-solid fa-graduation-cap fa-xl" style="color: #74c0fc"></i>

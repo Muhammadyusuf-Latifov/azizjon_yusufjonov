@@ -1,3 +1,22 @@
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.scroll-container img {
+  flex-shrink: 0;
+  max-height: 80%;
+  max-width: 90%;
+  scroll-snap-align: center;
+}
+// -------------
 #modal {
   display: none;
   position: fixed;
@@ -111,3 +130,4 @@
     }
   }
 }
+

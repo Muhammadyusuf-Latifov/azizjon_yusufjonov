@@ -74,6 +74,16 @@
         }
       }
       // -------------- rule =============
+      .bg{
+       a{
+        display: flex;
+        align-items:center;
+        gap: 20px;
+        i{
+          font-size: 20px;
+        }
+       }
+      }
       .tag {
         display: flex;
         //align-items: center;
@@ -88,13 +98,21 @@
         position: absolute;
         left: -100px;
         bottom: 97px;
-
+        
+        a{
+         display: flex;
+         align-items: center;
+         gap: 20px;
+         i{
+          font-size: 20px;
+         }
         h3 {
           color: rgb(28, 80, 80);
           font-size: 20px;
 
           font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
         }
+       }
       }
       // --------------- tel ------------
       .tel-number {
