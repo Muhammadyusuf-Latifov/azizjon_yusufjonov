@@ -1,5 +1,6 @@
-.youTube {  padding-top: 120px;
-  
+.youTube {
+  padding-top: 120px;
+
   .youTube__box {
     margin-bottom: 80px;
     display: flex;
@@ -19,8 +20,8 @@
 
       .name__Bottom {
         color: rgb(4, 101, 96);
-        p{
-            font-size: 12px;
+        p {
+          font-size: 12px;
         }
       }
       .youTube__video {
@@ -37,16 +38,16 @@
     .youTube__box {
       margin-bottom: 110px;
       display: flex;
-flex-direction: column;
+      flex-direction: column;
       align-items: center;
       gap: 20px;
-     
+
       .youTube__context {
         width: 100%;
         line-height: 1.3;
         margin-bottom: 20px;
-        h3{
-            font-size: 28px;
+        h3 {
+          font-size: 28px;
         }
       }
       .youTube__img {

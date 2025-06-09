@@ -37,8 +37,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-   position: relative;
-   z-index: 10;
+    position: relative;
+    z-index: 10;
 
     .about__box {
       overflow: hidden;
