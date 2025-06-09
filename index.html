@@ -7,8 +7,8 @@
       name="google-site-verification"
       content="WiBrG3-5euIOAsKOuZz8zMT5qf3aXGFU1OaQDZE6yrA"
     />
-    <link rel="icon" href="./assets/icon.png" />
 
+    <link rel="icon" href="./assets/icon.png" />
     <title>Azizjon Yusufjonov - Urolog, Tibbiy Konsultatsiya</title>
     <meta
       name="description"
@@ -50,6 +50,14 @@
       name="twitter:image"
       content="https://sizningsaytingiz.uz/images/azizjon.jpg"
     />
+
+    <link
+    rel="preload"
+    href="/css/main.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript><link rel="stylesheet" href="/css/main.min.css" /></noscript>
     <!-- ijtimoiy tarmoq -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- lightbox CSS -->
@@ -71,6 +79,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <!-- owl corusel -->
+   
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -80,7 +90,7 @@
         <nav class="navbar">
           <div class="nav__logo">
             <img src="./assets/logo.jpg" alt="Tasvir tavsifi" loading="lazy" />
-            <h1>Azizjon Yusufjonov</h1>
+            <h3>Azizjon Yusufjonov</h3>
           </div>
           <div class="nav__links">
             <ul class="nav__collcetion">
@@ -103,7 +113,7 @@
               </li>
             </ul>
             <div onclick="openMenu()" class="menu">
-              <img src="./assets/menu.svg" alt="" />
+              <img src="./assets/menu.svg" alt="menu" />
             </div>
           </div>
         </nav>
@@ -118,10 +128,10 @@
                 Eng katta boyligimiz bu xalqimiz <span>salomatligidir.</span>
               </h2>
 
-              <p class="typewriter">
+              <h1 class="typewriter">
                 Azizjon Yusufjonov Urolog | endourolog | laparoskopist. 7+
                 yillik tajribaga ega doktor
-              </p>
+              </h1>
               <div class="btn__vd">
                 <div>
                   <a href="tel:+998998426170"
@@ -810,7 +820,7 @@
         <div class="container">
           <div class="reception__context">
             <h2>Konsultatsiyamizga yozilishni xoxlaysizmi?</h2>
-            <a href="tel:+998998626170"><span>+998 99 842-61-70</span></a>
+            <a class="nomer" href="tel:+998998626170"><span>+998 99 842-61-70</span></a>
             <p>Nozik muammolarga — professional yondashuv.</p>
             <div class="social__links">
               <!-- telegram -->

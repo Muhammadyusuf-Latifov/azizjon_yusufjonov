@@ -101,19 +101,7 @@ videoOverlay.addEventListener("click", (e) => {
     videoElement.currentTime = 0;
   }
 });
-// toggle menu=============================================================
-
-// function openMenu() {
-//   document.querySelector('#overlay').style.display = 'flex';
-// }
-
-// function closeMenuIfOutside(event) {
-//   const menu = document.querySelector('#mobileMenu');
-//   if (!menu.contains(event.target)) {
-//     document.getElementById('overlay').style.display = 'none';
-//   }
-// }
-// -=============================================================================================================
+// toggle ======================================================
 // toggle menu==================================
 // ======================================
 const backmenuEl = document.querySelector(".overlay");
