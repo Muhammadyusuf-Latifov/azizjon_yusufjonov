@@ -126,11 +126,29 @@ function openMenu() {
   popupLeft();
 }
 
-
 function closeMenu() {
-  backmenuEl.style.display = "none"
+  backmenuEl.style.display = "none";
   function closeLeft() {
-    contentEl.classList.remove("active")
+    contentEl.classList.remove("active");
   }
-  closeLeft()
+  closeLeft();
 }
+// ====================================
+// owl corusel ===========================================================≠================================================
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 2,
+
+    nav: true,
+    dots: true,
+    autoplay: true, // 🔄 enables autoplay
+    autoplayTimeout: 3000, // ⏱ 3 seconds per slide
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 1 },
+      1000: { items: 1 },
+    },
+  });
+});

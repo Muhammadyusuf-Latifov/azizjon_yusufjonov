@@ -13,7 +13,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./assets/images/logo.svg" />
+    <!-- owl corusel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- owl corusel -->
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -24,7 +34,7 @@
       <div class="container">
         <nav class="navbar">
           <div class="nav__logo">
-            <img src="./assets/logo.png" alt="" />
+          <img src="./assets/logo.jpg" alt="">
             <h3>Azizjon Yusufjonov</h3>
           </div>
           <div class="nav__links">
@@ -32,17 +42,19 @@
               <li>
                 <a href="#"><span>Home</span></a>
               </li>
+
               <li>
                 <a href="#study"><span>Tajriba</span></a>
               </li>
-              <li>
-                <a href="#"><span>Home</span></a>
-              </li>
+
               <li>
                 <a href="#cer"><span>Sertifikatlar</span></a>
               </li>
               <li>
-                <a href="#"><span>Home</span></a>
+                <a href="#more"><span>Batafsil</span></a>
+              </li>
+              <li>
+                <a href="#qabul"><span>Qabul </span></a>
               </li>
             </ul>
             <div onclick="openMenu()" class="menu">
@@ -57,11 +69,11 @@
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__context">
-              <h1 class="hero__title">
+              <h1 class="hero__title typewriter">
                 Eng katta boyligimiz bu xalqimiz <span>salomatligidir.</span>
               </h1>
-              <p>
-                Azizjon Yusufjonov Urolog | endourolog | laparoskopist. 5+
+              <p class="typewriter">
+                Azizjon Yusufjonov Urolog | endourolog | laparoskopist. 7+
                 yillik tajribaga ega doktor
               </p>
               <div class="btn__vd">
@@ -79,7 +91,7 @@
                       id="videoTrigger"
                       aria-label="Open video"
                     >
-                      <img src="./assets/preview.jpg" alt="." />
+                      <img class="videoC" src="./assets/preview.jpg" alt="." />
                       <div class="play-button"><i class="fas fa-play"></i></div>
                     </div>
                   </div>
@@ -151,15 +163,14 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                <i class="fa-brands fa-instagram" style="color: #15d2f5;"></i>
+                  <i class="fa-brands fa-instagram" style="color: #15d2f5"></i>
                   <h3>Azizxon Yusufjonov</h3>
-                  </a
-                >
+                </a>
               </div>
               <div class="tag bg">
                 <a href="https://t.me/Urologist_dr_Aziz" target="_blank">
-                  <i class="fa-brands fa-telegram" style="color: #2dcce3;"></i>
-                  <h3>Xabar yuborish </h3>
+                  <i class="fa-brands fa-telegram" style="color: #2dcce3"></i>
+                  <h3>Xabar yuborish</h3>
                 </a>
               </div>
               <div class="tel-number bg">
@@ -188,9 +199,10 @@
                 </div>
 
                 <div class="year__context">
-                  <h3>2017-yil</h3>
+                  <h3>2010-2017-yillar</h3>
                   <p>
-                    Otorinolaringologiya yunalishi bo'yicha klinik ordinator
+                    Toshkent tibbiyot akademiyasi Urganch filiali Umumiy
+                    amaliyot shifokori
                   </p>
                 </div>
               </div>
@@ -211,10 +223,8 @@
                 </div>
 
                 <div class="year__context">
-                  <h3>2017-yil</h3>
-                  <p>
-                    Otorinolaringologiya yunalishi bo'yicha klinik ordinator
-                  </p>
+                  <h3>2017-2019-yil</h3>
+                  <p>Xalqlar doʻstligi Rossiya Universiteti</p>
                 </div>
               </div>
               <!-- down 2 -->
@@ -234,10 +244,8 @@
                 </div>
 
                 <div class="year__context">
-                  <h3>2017-yil</h3>
-                  <p>
-                    Otorinolaringologiya yunalishi bo'yicha klinik ordinator
-                  </p>
+                  <h3>2019 yil</h3>
+                  <p>Yunusobod medical centre, urologik jarroh</p>
                 </div>
               </div>
               <!-- down 3 -->
@@ -257,10 +265,8 @@
                 </div>
 
                 <div class="year__context">
-                  <h3>2017-yil</h3>
-                  <p>
-                    Otorinolaringologiya yunalishi bo'yicha klinik ordinator
-                  </p>
+                  <h3>2024 yil</h3>
+                  <p>Bolalar urologiyasi</p>
                 </div>
               </div>
               <!-- down 4 -->
@@ -280,9 +286,10 @@
                 </div>
 
                 <div class="year__context">
-                  <h3>2017-yil</h3>
+                  <h3>2024-yil</h3>
                   <p>
-                    Otorinolaringologiya yunalishi bo'yicha klinik ordinator
+                    "Golden Doctors" medali Qozog'iston ko'p mehnati uchun
+                    Respublika birdamlik jamg'armasi
                   </p>
                 </div>
               </div>
@@ -379,6 +386,345 @@
           </div>
         </div>
       </section>
+      <section id="more" class="dr-description">
+        <div class="container">
+          <h2 class="dr__title">Batafsil</h2>
+          <div class="owl-carousel">
+            <!--  -->
+            <div class="info__owl">
+              <div class="item__img">
+                <img src="./assets/owl/owl2.jpg" alt="" />
+              </div>
+              <div class="item">
+                <h3 class="item__title">
+                  Batafsil:
+                  <a href="tel:+998998426170"
+                    ><span>+998 99 842 61 70 </span></a
+                  >
+                </h3>
+                <h3 class="extra">Qo'shimcha:</h3>
+                <div class="social__links">
+                  <!-- telegram -->
+                  <a href="https://t.me/Urologist_dr_Aziz" target="_blank"
+                    ><i
+                      class="fa-brands fa-telegram fa-2xl"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                  <!-- ins -->
+                  <a
+                    href="https://instagram.com/endourolog_azizjon"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-instagram fa-2xl"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                  <!-- tel -->
+                  <a href="tel:+998998426170"
+                    ><i
+                      class="fa-solid fa-square-phone fa-2xl"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                  <!-- you tube -->
+                  <a
+                    href="https://www.youtube.com/results?search_query=azizjon+yusufjonov"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl"
+                      style="color: #fefefe"
+                    ></i
+                  ></a>
+                  <!-- map -->
+                  <a
+                    href="https://www.google.com/maps/place/Yunusobad+Medical+Center/@41.3830541,69.292447,14.26z/data=!4m14!1m7!3m6!1s0x38aef32709e6c6bb:0x1c14ce22472b80b3!2sYunusobad+Medical+Center!8m2!3d41.383114!4d69.2984859!16s%2Fg%2F11qpq840fv!3m5!1s0x38aef32709e6c6bb:0x1c14ce22472b80b3!8m2!3d41.383114!4d69.2984859!16s%2Fg%2F11qpq840fv?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    ><i
+                      class="fa-solid fa-location-dot fa-xl"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+            <!--  -->
+            <div class="info__owl">
+              <div class="item__img">
+                <img src="./assets/owl/owl-back2.jpg" alt="" />
+              </div>
+              <div class="item">
+                <h3>Shaxsiy ma'lumotlar</h3>
+                <ul class="item__collection">
+                  <li class="item__list">
+                    Ism&familya: <span> Azizjon Yusufjonov</span>
+                  </li>
+                  <li class="item__list">
+                    Tug'ilgan sana: <span> 03.01.1992-yil</span>
+                  </li>
+                  <li class="item__list">Millati: <span> O'zbek</span></li>
+                  <li class="item__list">
+                    Yashash joyi: <span> Toshkent, O'zbekiston</span>
+                  </li>
+                  <li class="item__list">
+                    Tug'ilgan joyi:
+                    <span>Farg'ona viloyati, Furqat tumani</span>
+                  </li>
+                  <li class="item__list">
+                    Elektron manzil:
+                    <a href="mailto:Azizjon01031992@mail.com"
+                      ><span class="email__item"
+                        >Azizjon01031992@mail.com</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <section class="youTube">
+        <div class="container">
+          <!-- box 1 -->
+          <div class="youTube__box">
+            <div class="youTube__context">
+              <h3>
+                Siydik-tosh kasalligi oldini olish va ilmiy isbotlangan
+                profilaktikasi
+              </h3>
+            </div>
+            <div class="youTube__img">
+              <iframe
+                class="youTube__video"
+                height="300"
+                src="https://www.youtube.com/embed/CaMmeugQzVk?si=rf4u39RLXgYoehNJ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="name__Bottom">
+                <h5>Azizjon Yusufjonov</h5>
+                <p>Urolog | endourolog | laparoskopist</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- box 2 -->
+          <div class="youTube__box">
+            <div class="youTube__context">
+              <h3>Endourologiya: siydik-tosh kasalligida oltin standart</h3>
+            </div>
+            <div class="youTube__img">
+              <iframe
+                class="youTube__video"
+                height="300"
+                src="https://www.youtube.com/embed/QAfn98EmFi8?si=4k283C3ic9ZkWYWG&amp;start=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="name__Bottom">
+                <h5>Azizjon Yusufjonov</h5>
+                <p>Urolog | endourolog | laparoskopist</p>
+              </div>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="youTube__box">
+            <div class="youTube__context">
+              <h3>
+                Erkaklarda urug' pufagida Kista: sabablar, belgilari va davolash
+                usullari. Batafsil CASE VIDEO
+              </h3>
+            </div>
+            <div class="youTube__img">
+              <iframe
+                class="youTube__video"
+                height="300"
+                src="https://www.youtube.com/embed/QEF2WRZTAhA?si=BgqbP2nMdlogO0XX"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="name__Bottom">
+                <h5>Azizjon Yusufjonov</h5>
+                <p>Urolog | endourolog | laparoskopist</p>
+              </div>
+            </div>
+          </div>
+          <!-- box 4 -->
+          <div class="youTube__box">
+            <div class="youTube__context">
+              <h3>
+                Siydik-tosh kasalligi: turlari, sabablari va davolash choralari!
+                Urologdan taxliliy video
+              </h3>
+            </div>
+            <div class="youTube__img">
+              <iframe
+                class="youTube__video"
+                height="300"
+                src="https://www.youtube.com/embed/gfm8PDVlwxs?si=PfvNCnse0SHj5C6w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="name__Bottom">
+                <h5>Azizjon Yusufjonov</h5>
+                <p>Urolog | endourolog | laparoskopist</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -------- -->
+        </div>
+      </section>
+      <section id="qabul" class="reception">
+        <div class="container">
+          <div class="reception__context">
+            <h2>Konsultatsiyamizga yozilishni xoxlaysizmi?</h2>
+            <a href="#"><span>+998 99 842-61-70</span></a>
+            <p>Nozik muammolarga — professional yondashuv.</p>
+            <div class="social__links">
+              <!-- telegram -->
+              <a href="https://t.me/Urologist_dr_Aziz" target="_blank"
+                ><i
+                  class="fa-brands fa-telegram fa-2xl"
+                  style="color: #2186b8"
+                ></i
+              ></a>
+              <!-- ins -->
+              <a href="https://instagram.com/endourolog_azizjon" target="_blank"
+                ><i
+                  class="fa-brands fa-instagram fa-2xl"
+                  style="color: #2186b8"
+                ></i
+              ></a>
+              <!-- tel -->
+              <a href="tel:+998998426170"
+                ><i
+                  class="fa-solid fa-square-phone fa-2xl"
+                  style="color: #2186b8"
+                ></i
+              ></a>
+              <!-- you tube -->
+              <a
+                href="https://www.youtube.com/results?search_query=azizjon+yusufjonov"
+                target="_blank"
+                ><i
+                  class="fa-brands fa-youtube fa-2xl"
+                  style="color: #2186b8"
+                ></i
+              ></a>
+              <!-- map -->
+              <a
+                href="https://www.google.com/maps/place/Yunusobad+Medical+Center/@41.3830541,69.292447,14.26z/data=!4m14!1m7!3m6!1s0x38aef32709e6c6bb:0x1c14ce22472b80b3!2sYunusobad+Medical+Center!8m2!3d41.383114!4d69.2984859!16s%2Fg%2F11qpq840fv!3m5!1s0x38aef32709e6c6bb:0x1c14ce22472b80b3!8m2!3d41.383114!4d69.2984859!16s%2Fg%2F11qpq840fv?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                ><i
+                  class="fa-solid fa-location-dot fa-2xl"
+                  style="color: #2186b8"
+                ></i
+              ></a>
+              <a
+                href="https://www.facebook.com/share/16ut7DxeEG/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-facebook fa-2xl"
+                  style="color: #2186b8"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <hr />
+          <div class="map__wrapper">
+            <div class="map__context">
+              <h3>Murojaat uchun:</h3>
+              <h4>Manzil: Yunusobod medical center</h4>
+              <p class="destination">
+                Yunusobod 16-mavze, ko'ch. A. Donish, 28a Mo'ljal: Bar
+                "Chempion"
+              </p>
+              <p class="phone">Tel: <span>+998 99 842-61-70</span></p>
+              <div class="social__links">
+                <!-- telegram -->
+                <a href="https://t.me/Urologist_dr_Aziz" target="_blank"
+                  ><i
+                    class="fa-brands fa-telegram fa-2xl"
+                    style="color: #2186b8"
+                  ></i
+                ></a>
+                <!-- ins -->
+                <a
+                  href="https://instagram.com/endourolog_azizjon"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram fa-2xl"
+                    style="color: #2186b8"
+                  ></i
+                ></a>
+                <!-- tel -->
+                <a href="tel:+998998426170"
+                  ><i
+                    class="fa-solid fa-square-phone fa-2xl"
+                    style="color: #2186b8"
+                  ></i
+                ></a>
+                <!-- you tube -->
+                <a
+                  href="https://www.youtube.com/results?search_query=azizjon+yusufjonov"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-youtube fa-2xl"
+                    style="color: #2186b8"
+                  ></i
+                ></a>
+                <!-- map -->
+                <a
+                  href="https://www.google.com/maps/place/Yunusobad+Medical+Center/@41.3830541,69.292447,14.26z/data=!4m14!1m7!3m6!1s0x38aef32709e6c6bb:0x1c14ce22472b80b3!2sYunusobad+Medical+Center!8m2!3d41.383114!4d69.2984859!16s%2Fg%2F11qpq840fv!3m5!1s0x38aef32709e6c6bb:0x1c14ce22472b80b3!8m2!3d41.383114!4d69.2984859!16s%2Fg%2F11qpq840fv?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  ><i
+                    class="fa-solid fa-location-dot fa-2xl"
+                    style="color: #2186b8"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/share/16ut7DxeEG/"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-facebook fa-2xl"
+                    style="color: #2186b8"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="map__img">
+              <iframe
+                class="i_map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.1234567890123!2d69.29600000000000!3d41.38311400000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef32709e6c6bb%3A0x1c14ce22472b80b3!2sYunusobad+Medical+Center!5e0!3m2!1sen!2suz!4v1620000000000!5m2!1sen!2suz"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="overlay" onclick="closeMenu()"></div>
@@ -430,11 +776,12 @@
         </a>
       </ul>
     </div>
+    <!-- owl corusel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="./js/app.js"></script>
   </body>
 </html>
-
-<i class="fa-solid fa-house fa-xl" style="color: #74c0fc"></i>
-
-<i class="fa-solid fa-graduation-cap fa-xl" style="color: #74c0fc"></i>

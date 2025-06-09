@@ -1,58 +1,55 @@
 #mobileMenu {
-    background: rgb(238, 239, 239);
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-  }
-  // ---------------------
-  .overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 299;
-  }
-  .content {
-    width: 200px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: -200px;
-    z-index: 300;
-    background: #74c0fc;
-    transition: 0.2s;
-    pointer-events: all;
-    border-radius: 0 5px 5px 0;
-    overflow: hidden;
-    box-shadow: 5px 10px 30px #6d8ca4;
-    padding: 5px;
-    padding-top: 10px;
-  }
-  .content.active {
-    left: 0;
-    pointer-events: all;
-  }
-  .li__menu {
-    background: #fff;
-    padding: 20px;
-    color: #74c0fc;
+  background: rgb(238, 239, 239);
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+// ---------------------
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 299;
+}
+.content {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -220px;
+  z-index: 300;
+  background: #74c0fc;
+  transition: 0.2s;
+  pointer-events: all;
+  border-radius: 0 5px 5px 0;
   overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  .menu__link {
-    font-size: 18px;
-   
-    
-   
-    overflow: hidden;
-  }
-  
+  box-shadow: 5px 10px 30px #6d8ca4;
+  padding: 5px;
+  padding-top: 10px;
+}
+.content.active {
+  left: 0;
+  pointer-events: all;
+}
+.li__menu {
+  background: #fff;
+  padding: 20px;
+  color: #74c0fc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menu__link {
+  font-size: 18px;
+  overflow: hidden;
+}
+

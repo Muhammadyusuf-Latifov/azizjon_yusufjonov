@@ -9,8 +9,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
-    background: linear-gradient(#000000, transparent);
+    height: 100%;
+    background: linear-gradient( #000000, transparent);
   }
 
   .hero__wrapper {
@@ -24,6 +24,7 @@
       .hero__title {
         color: #fff;
         font-size: 62px;
+        background: transparent;
         text-shadow: 2px 2px 50px #fff;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
@@ -86,7 +87,12 @@
 }
 @media (max-width: 570px) {
   .hero {
+  background: url(../assets/2025-06-02\ 19.23.01.jpg) no-repeat 
+  center;
     background-attachment: scroll;
+    
+    
+  
     .hero__wrapper {
       .hero__context {
         .hero__title {
@@ -107,4 +113,7 @@
       }
     }
   }
+}
+.videoC{
+  background: transparent;
 }
