@@ -140,3 +140,62 @@ $(document).ready(function () {
     },
   });
 });
+// === YOUTUBE VIDEO AUTO LOADER ===
+// Urolog Azizjon Yusufjonov kanalidan yangi videolarni avtomatik chiqarish
+
+const API_KEY = "AIzaSyC8Q9BboFiiAWVyHnalUb8UOVgMd-6RZdA"; // 👉 bu joyga o'zingning YouTube API kalitni yoz
+const CHANNEL_ID = "UCE-MiQcDnTNz-7b4rKZn7mA"; // Azizjon Yusufjonov kanal ID
+const MAX_RESULTS = 10; // nechta video chiqsin (xohlasang 3 yoki 12 ham bo‘lishi mumkin)
+// === Videolarni yuklash funksiyasi ===
+async function loadLatestVideos() {
+  try {
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}`
+    );
+    const data = await res.json();
+    const container = document.getElementById("videoContainer");
+    console.log(data);
+
+    // Agar container yo‘q bo‘lsa — hech narsa qilmaydi
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    if (data.items && data.items.length > 0) {
+      data.items.forEach((item) => {
+        if (item.id.kind === "youtube#video") {
+          const videoId = item.id.videoId;
+          const title = item.snippet.title;
+          const thumb = item.snippet.thumbnails.medium.url;
+
+          const videoBox = document.createElement("div");
+          videoBox.classList.add("video-boxx");
+          videoBox.innerHTML = `
+            
+          
+            <iframe
+            class="video-iframe-you"
+              src="https://www.youtube.com/embed/${videoId}" 
+              frameborder="0" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+              <h3 class="titleyou">${title}</h3>
+          `;
+          container.appendChild(videoBox);
+        }
+      });
+    } else {
+      container.innerHTML = `<p class="yoqq">Hozircha video topilmadi ❌</p>`;
+    }
+  } catch (err) {
+    console.error("YouTube ma'lumotini olishda xatolik:", err);
+    document.getElementById("videoContainer").innerHTML =
+      "<p>Videolarni yuklab bo‘lmadi 😔</p>";
+  }
+}
+
+// === Sahifa yuklanganda avtomatik chaqirish ===
+document.addEventListener("DOMContentLoaded", loadLatestVideos);
+// Sahifani 5 daqiqada bir marta yangilaydi
+setInterval(loadLatestVideos, 5 * 60 * 1000);

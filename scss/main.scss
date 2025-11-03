@@ -21,3 +21,60 @@
     margin-top: 20px;
   }
 }
+
+
+
+
+
+.title-video-you{
+  text-align: center;
+  font-size: 32px;
+  color:rgb(9, 114, 141);
+
+
+}
+.yoqq{
+  padding: 100px 0;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  color: rgb(0, 101, 129);
+}
+
+
+#videoContainer{
+ 
+ display: grid;
+ grid-template-columns:repeat(3,1fr);
+  gap: 18px;
+  
+}
+.video-iframe-you{
+  display: block;
+  width: 100%;
+  height:280px;
+ 
+}
+.titleyou{
+  font-size: 14px;
+  margin-top: 10px;
+  color:rgb(9, 114, 141);
+}
+.vvideos{
+margin-bottom: 80px;
+}
+.newbottom{
+  padding: 10px 30px;
+  border-radius: 10px;
+  border:none;
+  background:rgb(9, 114, 141);
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+transition: .3s;
+  
+}
+.newbottom:hover{
+  background: rgb(4, 76, 93);
+}
